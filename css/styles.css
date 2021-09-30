@@ -1,0 +1,232 @@
+:root {
+  /* Colors */
+  /* Primary Colors */
+  --clr-dk-blue: hsl(243, 87%, 12%);
+  --clr-desat-blue: hsl(238, 22%, 44%);
+  /* Accent Colors */
+  --clr-br-blue: hsl(224, 93%, 58%);
+  --clr-modrn-cyan: hsl(170, 45%, 43%);
+  /* Neutral Colors */
+  --clr-lght-gr-blue: hsl(240, 75%, 98%);
+  --clr-lght-gray: hsl(0, 0%, 75%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: .9rem;
+  color: var(--clr-dk-blue);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, .btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+/* Section paddings */
+#features {
+  padding: 2rem 5% 5rem;
+}
+
+#team {
+  padding: 0;
+  padding-top: 5rem;
+}
+
+#get-access, #contacts {
+  padding: 5rem 5%;
+}
+
+/* Features section */
+.logo, .footer-logo {
+  width: 9rem;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.head-link {
+  color: var(--clr-dk-blue);
+}
+
+.email {
+  font-size: .7rem;
+}
+
+.input {
+  width: 15rem;
+}
+
+.btn-primary {
+  height: 2rem;
+  width: 10rem;
+  font-size: .7rem;
+}
+
+/* Team-linked section */
+#team {
+  background: url(../images/bg-curve-desktop.svg);
+}
+
+.team {
+  padding: 5rem 5%;
+  background-color: var(--clr-lght-gr-blue);
+}
+
+.team-link {
+  color: var(--clr-modrn-cyan);
+  border-bottom: 1px solid var(--clr-modrn-cyan);
+  text-decoration: none;
+}
+
+.team-link:hover {
+  color: var(--clr-modrn-cyan);
+}
+
+.card {
+  width: 55%;
+  background-color: var(--clr-white);
+  border: none;
+  line-height: 1.8;
+}
+
+.top-icon {
+  width: 0.9rem;
+}
+
+.footer-pic {
+  width: 2.2rem;
+  height: auto;
+  border-radius: 100%;
+}
+
+/* Get access section */
+#get-access {
+  background-color: var(--clr-desat-blue);
+  color: var(--clr-white);
+}
+
+.form {
+  width: 65%;
+}
+
+.input-get-access {
+  border-width: thin;
+  height: 2rem;
+  font-size: .7rem;
+}
+
+/* Contact section */
+#contacts {
+  background-color: var(--clr-dk-blue);
+  color: var(--clr-lght-gray);
+}
+
+.list-inline {
+  width: 50%;
+}
+
+.footer-link {
+  color: var(--clr-lght-gray);
+}
+
+.fab {
+  border: 1px solid var(--clr-lght-gray);
+  border-radius: 100%;
+  padding: .5rem;
+  width: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 0;
+}
+
+.fab:hover {
+  border-color: var(--clr-br-blue);
+}
+
+/* Text */
+.main-header {
+  font-size: 2.1rem;
+}
+
+.footer-text {
+  font-size: .7rem;
+  margin-bottom: 0;
+}
+
+.footer-ad {
+  display: block;
+  font-weight: 400;
+}
+
+.paragraph {
+  width: 75%;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  #features, #get-access {
+    text-align: center;
+  }
+
+  .img-fluid {
+    margin-bottom: 3rem;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+
+  .form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .email, .btn-primary {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    height: 2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #contacts ul li a {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .media {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo {
+    width: 4rem;
+  }
+
+  .nav-link {
+    margin-left: 1.3rem;
+  }
+
+  .main-header {
+    font-size: 1.5rem;
+  }
+}
